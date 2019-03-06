@@ -4,9 +4,9 @@ Aplicaçao Web da pizzaria UDS desenvolvido em PHP com framework LARAVEL 5.0
 
 # Notas
 
-Subir este sitema na porta 8000, conforme comando baixo via cmd:
+Subir este sitema na porta 8000, conforme comando artisan baixo via cmd:
 
 php artisan serve 
 
-A API está configurada para a porta 8010
+OBS.: A API que alimentará este sistema deve rodar na porta 8010
 
