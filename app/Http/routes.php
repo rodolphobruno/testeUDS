@@ -11,11 +11,15 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/montarPizza', 'MontarPizzaController@create');
+Route::get('/montarPizza/create', 'MontarPizzaController@create');
+Route::post('/montarPizza/store',  [ 'as' => 'montarPizza.store', 'uses' => 'MontarPizzaController@store']);
 
-Route::get('home', 'HomeController@index');
+Route::get('/', 'MontarPizzaController@create');
+
+/*Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
-]);
+]);*/
